@@ -5,9 +5,9 @@ Dec 2011
 Ronaldo Barbachano
 www.doinglines.com
 
-        Simple php5 class for storing and retrieving objects with support for APC and memcached.
+Simple php5 class for storing and retrieving objects with support for APC and memcached.
 
-        Eventually will support each function for APC (bin functions) and memcached, and perhaps varnish.
+Eventually will support each function for APC (bin functions) and memcached, and perhaps varnish.
 
 
 Usage
