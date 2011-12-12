@@ -18,26 +18,24 @@ More examples/notes in code.
 
         <?php
 
-                myClass extends couchCache{
-                        function __construct(){
-                                // set if you need to connect to memcached servers or have anything
-                                // in the construct method.
-                                parent::__construct();
-                        }
-                }
+        myClass extends couchCache{
+          function __construct(){
+          // set if you need to connect to memcached servers or have anything
+          // in the construct method.
+        	parent::__construct();
+          }
+        }
 
-                $new = myClass();
-                $new->store('message','Hello World');
+        $new = myClass();
+        $new->store('message','Hello World');
                 
-		// Store to defined couch database (otherwise reverts to defined)
-                // $new->store('message','Hello World','couchDB');
+				// Store to defined couch database (otherwise reverts to defined)
+        // $new->store('message','Hello World','couchDB');
 
-                $new->retrieve('message');
+        $new->retrieve('message');
 
-                // get message from couchDB, but dont load into memcached
-                // $new->retrieve('message',false,'couchDB');
+        // get message from couchDB, but dont load into memcached
+        // $new->retrieve('message',false,'couchDB');
 
-                // get message and load into memcached
-                // $new->retrieve('message',true);
-
-
+        // get message and load into memcached
+        // $new->retrieve('message',true);
