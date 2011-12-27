@@ -32,7 +32,7 @@ class couchCache{
 			foreach(explode(' ',trim($servers)) as $server)
 				$a[] = explode(':',$server,3);
 		}
-		elseif(is_array($servers){
+		elseif(is_array($servers)){
 			$a = $servers;
 		}
 		return ($this->cache->addServers($a)?true : false);
